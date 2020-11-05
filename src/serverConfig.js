@@ -1,40 +1,14 @@
 const express = require('express');
 const chalk = require('chalk');
 const path = require('path');
-const app = express();
-const serverPort = 2400;
-app.use(express.json());
-const demoJson = {
-
-  success : true,
-  age : 21,
-  data : {
-    dataitems : "data"
-  }
-};
-
-const callBackfunction = (req , res) => {
-
-  res.status(200).send(demoJson);
-}
+const app = require('./app');
 
 
 
 const publicDirectory = path.join(__dirname, '../public');
+const serverPort = 2500;
 
 
-app.get('', callBackfunction);
-
-
-app.get('/api/v1.0/tours' , callBackfunction);
-app.post('/api/v1.0/tours' , callBackfunction);
-
-
-
-app.get('/api/v1.0/tours/:id' , callBackfunction);
-
-app.patch('/api/v1.0/tours/:id' , callBackfunction);
-app.delete('/api/v1.0/tours/:id', callBackfunction); 
 
 
 app.listen(serverPort,() => {
