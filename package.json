@@ -1,7 +1,6 @@
 {
   "name": "adventour",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "chalk": "^4.1.0",
@@ -14,5 +13,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tushar",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TusharGaonkar/Adventour.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TusharGaonkar/Adventour/issues"
+  },
+  "homepage": "https://github.com/TusharGaonkar/Adventour#readme",
+  "description": ""
 }
